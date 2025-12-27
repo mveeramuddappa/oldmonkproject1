@@ -1,0 +1,117 @@
+🔥 AZ-900 Interview Answers (2 Years Experience Style)
+☁️ Cloud Fundamentals
+❓ What is cloud computing?
+
+2-Year Experience Answer:
+
+Cloud computing allows us to provision compute, storage, networking, and managed services on demand over the internet. Instead of investing in physical infrastructure, we consume Azure resources on a pay-as-you-go model, which helps with scalability, cost control, and faster deployments.
+
+❓ Scalability vs Elasticity?
+
+2-Year Experience Answer:
+
+Scalability is the ability of an application to handle growth by increasing resources, while elasticity is when the platform automatically scales resources up or down based on real-time demand, which is very useful for variable workloads.
+
+❓ Fault tolerance vs High availability?
+
+2-Year Experience Answer:
+
+Fault tolerance ensures the application continues to work even if a component fails, whereas high availability focuses on minimizing downtime using redundancy like multiple instances, load balancers, and Availability Zones.
+
+☁️ Azure Architecture
+❓ What is an Azure region and Availability Zone?
+
+2-Year Experience Answer:
+
+An Azure region is a geographical location that contains multiple data centers. Availability Zones are physically separate data centers within a region, each with independent power and networking. We usually deploy production workloads across zones to improve availability and SLA.
+
+❓ When do you use region pairs?
+
+2-Year Experience Answer:
+
+Region pairs are mainly used for disaster recovery and platform resiliency. In case of a regional outage, Microsoft prioritizes recovery of paired regions, and some services replicate data automatically across region pairs.
+
+💻 Compute Services
+❓ Azure VM vs App Service?
+
+2-Year Experience Answer:
+
+We use Azure VMs when we need full control over the OS or when migrating legacy applications. App Service is preferred for web applications because it’s managed, supports auto-scaling, and reduces operational overhead.
+
+❓ When would you choose Azure Functions?
+
+2-Year Experience Answer:
+
+Azure Functions are best for event-driven workloads like processing messages, handling file uploads, or running scheduled jobs. Since it’s serverless, we only pay for execution time, which makes it cost-effective for intermittent workloads.
+
+🌐 Networking
+❓ What is a Virtual Network and NSG?
+
+2-Year Experience Answer:
+
+A Virtual Network provides isolation and secure communication between Azure resources. NSGs are used to control inbound and outbound traffic at subnet or NIC level using allow and deny rules.
+
+❓ How do NSG and Azure Firewall differ?
+
+2-Year Experience Answer:
+
+NSGs provide basic traffic filtering, whereas Azure Firewall is a centralized, managed firewall with advanced Layer-7 filtering, logging, and scalability. We typically use Azure Firewall in hub-and-spoke architectures.
+
+🗄️ Storage & Databases
+❓ Blob Storage vs File Storage?
+
+2-Year Experience Answer:
+
+Blob Storage is used for unstructured data like images and backups, while File Storage provides shared file systems using SMB or NFS, often used to replace traditional file servers.
+
+❓ When do you use Cosmos DB?
+
+2-Year Experience Answer:
+
+Cosmos DB is ideal for globally distributed applications that need low latency and high throughput. It’s commonly used for NoSQL workloads like IoT data, user sessions, or real-time personalization.
+
+🔐 Security & Identity
+❓ Authentication vs Authorization?
+
+2-Year Experience Answer:
+
+Authentication verifies the user’s identity, and authorization determines what the authenticated user is allowed to do. In Azure, authentication is handled by Azure AD and authorization by RBAC.
+
+❓ What is RBAC and how do you use it?
+
+2-Year Experience Answer:
+
+RBAC is used to control access to Azure resources by assigning roles to users or groups at different scopes like subscription or resource group. We follow the least-privilege principle and assign only the required permissions.
+
+❓ How does Azure Key Vault help?
+
+2-Year Experience Answer:
+
+Azure Key Vault securely stores secrets, keys, and certificates. Applications access these secrets using managed identities, which helps avoid hard-coding credentials and improves security posture.
+
+🛡️ Governance
+❓ Azure Policy vs Resource Locks?
+
+2-Year Experience Answer:
+
+Azure Policy enforces rules during resource creation, like restricting regions or requiring tags. Resource Locks are used to prevent accidental deletion or modification of critical resources, especially in production.
+
+💰 Cost Management
+❓ How do you optimize Azure costs?
+
+2-Year Experience Answer:
+
+We optimize costs by using Reserved Instances for steady workloads, Azure Hybrid Benefit for existing licenses, auto-scaling, shutting down unused resources, and regularly reviewing Azure Cost Management and Advisor recommendations.
+
+📄 SLA & Lifecycle
+❓ How do Availability Zones affect SLA?
+
+2-Year Experience Answer:
+
+Deploying resources across Availability Zones significantly improves SLA because it protects against data center failures within a region. Most production architectures use zones along with load balancing.
+
+❓ Public Preview vs GA?
+
+2-Year Experience Answer:
+
+Public Preview features are used mainly for testing and are not recommended for production due to limited support and no SLA. General Availability services are fully supported and suitable for production workloads.
